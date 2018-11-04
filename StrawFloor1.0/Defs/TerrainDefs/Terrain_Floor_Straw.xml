@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="FloorBase">
+		<defName>N3_StrawFloor</defName>
+		<label>straw</label>
+		<renderPrecedence>246</renderPrecedence>
+		<description>A simple floor-covering of dried straw. While it's not much to look at, it's good at absorbing the animal filth of a barn.</description>
+		<texturePath>N3_StrawFloor</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<burnedDef>N3_StrawFloorBurned</burnedDef>
+		<costList>
+			<Hay>3</Hay>
+		</costList>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<statBases>
+			<Beauty>0</Beauty>
+			<Cleanliness>-0.2</Cleanliness>
+			<Flammability>0.75</Flammability>
+			<WorkToBuild>85</WorkToBuild>
+		</statBases>
+		<acceptTerrainSourceFilth>False</acceptTerrainSourceFilth>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="BurnedFloorBase">
+		<defName>N3_StrawFloorBurned</defName>
+		<label>burnt straw</label>
+		<renderPrecedence>245</renderPrecedence>
+		<description>The burnt ashes of straw flooring.</description>
+		<texturePath>N3_StrawFloorBurned</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<generatedFilth>Filth_Ash</generatedFilth>
+		<acceptTerrainSourceFilth>False</acceptTerrainSourceFilth>
+	</TerrainDef>
+</Defs>
